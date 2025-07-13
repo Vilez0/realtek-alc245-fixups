@@ -4558,6 +4558,7 @@ static void alc245_fixup_hp_gpio_led(struct hda_codec *codec,
 				const struct hda_fixup *fix, int action)
 {
 	struct alc_spec *spec = codec->spec;
+	printk(KERN_INFO "patched realtek module\n");
 
 	if (action == HDA_FIXUP_ACT_PRE_PROBE)
 		spec->micmute_led_polarity = 1;
